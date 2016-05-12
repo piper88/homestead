@@ -7,6 +7,7 @@
 // }
 //
 // displayFirstPic();
+
 var currentPic = document.getElementById('clickableimage');
 currentPic.addEventListener('click', changeImage);
 
