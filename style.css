@@ -1,0 +1,96 @@
+html {
+  background: url('images/background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  width: 80%;
+  height: 800px;
+  background-color: white;
+  opacity: .8;
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
+  margin: 20px auto;
+}
+
+.about-us {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h2 {
+  margin: auto;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  opacity: .8;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: rgba(51, 106, 50, 0.76);
+}
+
+a:hover {
+  color: rgb(32, 68, 31);
+}
+
+h1 {
+  font-family: sans-serif;
+  color: rgb(52, 106, 51);
+  font-size: 40px;
+}
+
+/*styling for gallery.html*/
+
+.container {
+  display: flex;
+  margin: 20px auto;
+  max-height:600px;
+  max-width: 50%;
+  background-color: white;
+  opacity: .8;
+  border-radius: 5px;
+}
+
+img {
+  max-width: 90%;
+  object-fit: scale-down;
+  align-items: center;
+  margin: auto;
+  border: 1px black solid;
+  border-radius: 5px;
+
+}
+
+#image-container {
+  border: 1px black solid;
+}
+
+/*styling for contactus.html*/
