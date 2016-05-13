@@ -21,10 +21,11 @@ var imageArray = ['file:///Users/sarahdebey/myfunprojects/projecttwo/images/gard
 //     currentPic.src = imageArray[0];
 //   }
 // }
-
 var currentPic = document.getElementById('clickableimage');
 var nextPic = document.getElementById('next');
 nextPic.addEventListener('click', nextImage);
+var previousPic = document.getElementById('previous');
+previousPic.addEventListener('click', previousImage);
 
 function nextImage(event) {
   if (currentPic.src == imageArray[0]) {
@@ -37,9 +38,6 @@ function nextImage(event) {
     currentPic.src = imageArray[0];
   }
 }
-
-var previousPic = document.getElementById('previous');
-previousPic.addEventListener('click', previousImage);
 
 function previousImage(event) {
   if (currentPic.src == imageArray[1]) {
