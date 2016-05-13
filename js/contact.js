@@ -3,13 +3,20 @@ saveForm.addEventListener('submit', saveOrRedo);
 var userInfoArray = [];
 
 function saveOrRedo(event) {
+  console.log('saveorredoran');
   var checkName = document.forms['saveallthethings']['name'];
   var checkEmail = document.forms['saveallthethings']['email'];
   var checkComments = document.forms['saveallthethings']['comments'];
-  if (checkName == null || checkName == '') {
+  if ((checkName.value === null || checkName.value === '') && ((checkEmail.value).indexOf('@') < 0 || checkEmail.value === null || checkEmail.value === '')) {
+    event.preventDefault();
+    alert('Please enter your name and valid email address');
+    clearForm();
+  } else if (checkName.value === null || checkName.value === '') {
+    event.preventDefault();
     alert('Please enter your name');
     clearForm();
-  } else if ((checkEmail.value).indexOf('@') < 0) {
+  } else if ((checkEmail.value).indexOf('@') < 0 || checkEmail.value === null || checkEmail.value === '') {
+    event.preventDefault();
     alert('Please enter a valid email address');
     clearForm();
   } else {

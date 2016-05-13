@@ -1,0 +1,24 @@
+.memory-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 700px;
+  height: 400px;
+  background-color: white;
+  opacity: .8;
+  margin: auto;
+}
+
+.cards {
+  object-fit: scale-down;
+  border: 1px solid black;
+  height: 180px;
+  width: 180px;
+}
+
+img {
+  max-height: 160px;
+  max-width: 160px;
+  margin-top: 10px;
+  /*visibility: hidden;*/
+}
