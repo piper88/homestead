@@ -1,24 +1,21 @@
-.memory-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 700px;
-  height: 400px;
-  background-color: white;
-  opacity: .8;
-  margin: auto;
+div#memory_board {
+ background:#DADADA;
+ border:#999 1px solid;
+ width: 800px;
+ height: 540px;
+ padding: 24px;
+ margin: 0px auto;
 }
 
-.cards {
-  object-fit: scale-down;
-  border: 1px solid black;
-  height: 180px;
-  width: 180px;
-}
-
-img {
-  max-height: 160px;
-  max-width: 160px;
-  margin-top: 10px;
-  /*visibility: hidden;*/
+div#memory_board > div {
+ background: rgb(120, 232, 144);
+ border: #000 1px solid;
+ width: 71px;
+ height: 71px;
+ float: left;
+ margin: 10px;
+ padding: 20px;
+ font-size: 64px;
+ cursor: pointer;
+ text-align: center;
 }
