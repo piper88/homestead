@@ -67,46 +67,4 @@ h1 {
   font-size: 40px;
 }
 
-/*styling for gallery.html*/
-
-.container {
-  display: flex;
-  flex-direction: column;
-  margin: 20px auto;
-  max-height:600px;
-  max-width: 50%;
-  background-color: white;
-  opacity: .8;
-  border-radius: 5px;
-}
-
-.nextprevious {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-button {
-  padding-top: 9px;
-  margin: 3px;
-}
-
-button:hover {
-  background-color: rgba(20, 227, 31, 0.28);
-}
-
-img {
-  max-width: 90%;
-  object-fit: scale-down;
-  align-items: center;
-  margin: 20px auto 0px;
-  border: 1px black solid;
-  border-radius: 5px;
-
-}
-
-#image-container {
-  border: 1px black solid;
-}
-
 /*styling for contactus.html*/
